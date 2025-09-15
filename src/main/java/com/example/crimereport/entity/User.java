@@ -53,5 +53,8 @@ public class User extends BaseEntity{
 	    
 	    @Column(nullable = true)
 	    private String profileImageUrl;
-
+	    
+	    @Builder.Default
+	    @Column(nullable = false)
+	    private Boolean isVerified = false;
 }
